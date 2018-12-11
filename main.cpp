@@ -1,3 +1,12 @@
+/**
+    main.cpp
+    Purpose: Runs the program
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #include <iostream>
 #include "parser.h"
 #include "html_builder.h"

@@ -1,3 +1,13 @@
+/**
+    hash.h
+    Purpose: Wrapper for hash map,
+             used when creating unordered sets
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #ifndef HASH_H_INCLUDED
 #define HASH_H_INCLUDED
 

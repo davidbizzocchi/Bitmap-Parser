@@ -1,3 +1,13 @@
+/**
+    pixel.h
+    Purpose: Defines object for each pixel
+             when parsing through bitmap file
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #ifndef PIXEL_H_INCLUDED
 #define PIXEL_H_INCLUDED
 

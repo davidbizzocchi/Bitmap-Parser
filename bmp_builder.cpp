@@ -1,10 +1,24 @@
+/**
+    bmp_builder.cpp
+    Purpose: Creates bitmap from given parameters
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #include "bmp_builder.h"
 
 #include <Windows.h>
 #include <algorithm>
 #include <memory>
 
-// Save the bitmap to a bmp file
+/**
+    windows_file_dialog::selectBMP - allows user to select bitmap file from file explorer
+
+    @param pointer for file that is to be selected.
+    @return none.
+*/
 void bmp_builder::SaveBitmapToFile( BYTE* pBitmapBits,
                        LONG lWidth,
                        LONG lHeight,
@@ -52,9 +66,6 @@ void bmp_builder::SaveBitmapToFile( BYTE* pBitmapBits,
     // This value should be values of BM letters i.e 0x4D42
     // 0x4D = M 0×42 = B storing in reverse order to match with endian
     bfh.bfType = 0x4D42;
-    //bfh.bfType = 'B'+('M' << 8);
-
-    // <<8 used to shift ‘M’ to end  */
 
     // Offset to the RGBQUAD
     bfh.bfOffBits = headers_size;

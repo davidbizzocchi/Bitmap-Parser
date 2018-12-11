@@ -1,8 +1,23 @@
+/**
+    windows_file_dialog.cpp
+    Purpose: Allows user to select a bitmap image to parse
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #include "windows_file_dialog.h"
 
 #include <windows.h>
 #include <iostream>
 
+/**
+    windows_file_dialog::selectBMP - allows user to select bitmap file from file explorer
+
+    @param pointer for file that is to be selected.
+    @return none.
+*/
 void windows_file_dialog::selectBMP(char* filePointer)
 {
     OPENFILENAME ofn;       // common dialog box structure

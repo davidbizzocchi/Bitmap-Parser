@@ -1,3 +1,12 @@
+/**
+    bmp_builder.h
+    Purpose: Creates bitmap from given parameters
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #ifndef BMP_BUILDER_H_INCLUDED
 #define BMP_BUILDER_H_INCLUDED
 

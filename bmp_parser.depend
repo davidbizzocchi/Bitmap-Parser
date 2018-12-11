@@ -1,48 +1,48 @@
 # depslib dependency file v1.0
-1544541102 source:e:\onyx programming task\bmp_parser\html_builder.cpp
+1544562772 source:e:\onyx programming task\bmp_parser\html_builder.cpp
 	"html_builder.h"
 	"pixel.h"
 	<fstream>
 	<unordered_set>
 	<windows.h>
 
-1544541102 e:\onyx programming task\bmp_parser\html_builder.h
+1544562774 e:\onyx programming task\bmp_parser\html_builder.h
 	<unordered_set>
 	<vector>
 	"hash.h"
 
-1544541102 e:\onyx programming task\bmp_parser\hash.h
+1544562772 e:\onyx programming task\bmp_parser\hash.h
 	"pixel.h"
 
-1544541102 e:\onyx programming task\bmp_parser\pixel.h
+1544562772 e:\onyx programming task\bmp_parser\pixel.h
 	<iostream>
 
-1544553306 source:e:\onyx programming task\bmp_parser\main.cpp
+1544561912 source:e:\onyx programming task\bmp_parser\main.cpp
 	<iostream>
 	"parser.h"
 	"html_builder.h"
 	"windows_file_dialog.h"
 
-1544546432 e:\onyx programming task\bmp_parser\parser.h
+1544565662 e:\onyx programming task\bmp_parser\parser.h
 	"pixel.h"
 	"hash.h"
 	<unordered_set>
 	<stdio.h>
 
-1544541102 e:\onyx programming task\bmp_parser\windows_file_dialog.h
+1544562772 e:\onyx programming task\bmp_parser\windows_file_dialog.h
 
-1544550542 source:e:\onyx programming task\bmp_parser\pixel.cpp
+1544562772 source:e:\onyx programming task\bmp_parser\pixel.cpp
 	"pixel.h"
 	"hash.h"
 	<iostream>
 	<vector>
 
-1544541102 source:e:\onyx programming task\bmp_parser\windows_file_dialog.cpp
+1544562526 source:e:\onyx programming task\bmp_parser\windows_file_dialog.cpp
 	"windows_file_dialog.h"
 	<windows.h>
 	<iostream>
 
-1544553306 source:e:\onyx programming task\bmp_parser\parser.cpp
+1544562774 source:e:\onyx programming task\bmp_parser\parser.cpp
 	"parser.h"
 	"pixel.h"
 	"html_builder.h"
@@ -53,13 +53,13 @@
 	<unordered_set>
 	<Windows.h>
 
-1544551888 source:e:\onyx programming task\bmp_parser\bmp_builder.cpp
+1544562772 source:e:\onyx programming task\bmp_parser\bmp_builder.cpp
 	"bmp_builder.h"
 	<Windows.h>
 	<algorithm>
 	<memory>
 
-1544551920 e:\onyx programming task\bmp_parser\bmp_builder.h
+1544562774 e:\onyx programming task\bmp_parser\bmp_builder.h
 	<Windows.h>
 	<memory>
 

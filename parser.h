@@ -1,3 +1,14 @@
+/**
+    parser.h
+    Purpose: Parses through given bitmap file,
+             shows relevant file info, creates
+             RGB color channel bitmap images.
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #ifndef PARSER_H_INCLUDED
 #define PARSER_H_INCLUDED
 

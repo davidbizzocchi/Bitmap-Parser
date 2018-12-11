@@ -1,3 +1,14 @@
+/**
+    parser.cpp
+    Purpose: Parses through given bitmap file,
+             shows relevant file info, creates
+             RGB color channel bitmap images.
+
+    @author David Bizzocchi
+    @version 1.0
+    @date 12/11/2018
+*/
+
 #include "parser.h"
 #include "pixel.h"
 #include "html_builder.h"
@@ -8,12 +19,22 @@
 #include <unordered_set>
 #include <Windows.h>
 
+/**
+    Parser::parseimage - Parses through given bitmap, creating unique RGB pixel set
+                         and color channel images from it.
+
+    @param Pointer to file that is to be parsed.
+    @return none.
+*/
 void Parser::parseimage(char* filePointer)
 {
+    // Pixel object to hold data
     Pixel pix;
 
+    // open parameter file
     FILE* f = fopen(filePointer, "rb");
 
+    // error check
     if(f == NULL)
     {
         std::cout << "Could not open file: " << filePointer << std::endl;
@@ -73,23 +94,7 @@ void Parser::parseimage(char* filePointer)
         }
     }
 
-    /**
-
-BYTE* buf = new BYTE[ width * 3 * height ];
-    c = 0;
-
-    for ( int i = 0; i < width; i++ )
-    {
-        for ( int j = 0; j < height; j++ )
-        {
-            buf[ c + 0 ] = (BYTE) 255;
-            buf[ c + 1 ] = (BYTE) 0;
-            buf[ c + 2 ] = (BYTE) 0;
-
-            c += 3;
-        }
-    } **/
-
+    // create red channel bitmap
     bmp_builder::SaveBitmapToFile( (BYTE*) redBuf,
                     width,
                     height,
@@ -97,6 +102,7 @@ BYTE* buf = new BYTE[ width * 3 * height ];
                     0,
                     ".\\redchannel.bmp" );
 
+    // create green channel bitmap
     bmp_builder::SaveBitmapToFile( (BYTE*) greenBuf,
                     width,
                     height,
@@ -104,6 +110,7 @@ BYTE* buf = new BYTE[ width * 3 * height ];
                     0,
                     ".\\greenchannel.bmp" );
 
+    // create blue channel bitmap
     bmp_builder::SaveBitmapToFile( (BYTE*) blueBuf,
                     width,
                     height,
@@ -111,6 +118,7 @@ BYTE* buf = new BYTE[ width * 3 * height ];
                     0,
                     ".\\bluechannel.bmp" );
 
+    // free up memory for each buffer
     delete [] redBuf;
     delete [] blueBuf;
     delete [] greenBuf;
@@ -119,16 +127,35 @@ BYTE* buf = new BYTE[ width * 3 * height ];
     fclose(f);
 }
 
+/**
+    Parser::getPixelSet - returns pixel set within parser class
+
+    @param none.
+    @return pixelSet of unique RGB pixels.
+*/
 std::unordered_set<Pixel, KeyHasher> Parser::getPixelSet()
 {
     return pixelSet;
 }
 
+/**
+    Parser::clearPixelSet - erases all data from unique pixel set
+
+    @param none.
+    @return none.
+*/
 void Parser::clearPixelSet()
 {
     pixelSet.clear();
 }
 
+/**
+    Parser::displayInformation - displays information of bitmap
+                                 image to user through console
+
+    @param none.
+    @return none.
+*/
 void Parser::displayInformation(const unsigned char* info)
 {
     std::cout << "  Size: " << *(long*)&info[2] << " Bytes" << std::endl;
