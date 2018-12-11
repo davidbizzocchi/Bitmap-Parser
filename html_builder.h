@@ -6,6 +6,7 @@
 
 #include "hash.h"
 
+
 class html_builder
 {
 public:

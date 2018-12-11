@@ -1,58 +1,65 @@
 # depslib dependency file v1.0
-1544496778 source:e:\onyx programming task\bmp_parser\main.cpp
-	<iostream>
-	"parser.h"
-	"html_builder.h"
-	"windows_file_dialog.h"
-
-1544497786 source:e:\onyx programming task\bmp_parser\parser.cpp
-	"parser.h"
-	"pixel.h"
-	"html_builder.h"
-	"hash.h"
-	<iostream>
-	<vector>
-	<algorithm>
-	<iostream>
-	<unordered_set>
-
-1544497574 e:\onyx programming task\bmp_parser\parser.h
-	<vector>
-	<unordered_set>
-	<stdio.h>
-	"pixel.h"
-	"hash.h"
-
-1544497574 source:e:\onyx programming task\bmp_parser\pixel.cpp
-	"pixel.h"
-	"hash.h"
-	<iostream>
-	<vector>
-
-1544497750 e:\onyx programming task\bmp_parser\pixel.h
-	<iostream>
-
-1544497386 source:e:\onyx programming task\bmp_parser\html_builder.cpp
+1544541102 source:e:\onyx programming task\bmp_parser\html_builder.cpp
 	"html_builder.h"
 	"pixel.h"
 	<fstream>
-	<iostream>
 	<unordered_set>
-	<vector>
 	<windows.h>
 
-1544497512 e:\onyx programming task\bmp_parser\html_builder.h
+1544541102 e:\onyx programming task\bmp_parser\html_builder.h
 	<unordered_set>
 	<vector>
 	"hash.h"
 
-1544409506 source:e:\onyx programming task\bmp_parser\windows_file_dialog.cpp
+1544541102 e:\onyx programming task\bmp_parser\hash.h
+	"pixel.h"
+
+1544541102 e:\onyx programming task\bmp_parser\pixel.h
+	<iostream>
+
+1544553306 source:e:\onyx programming task\bmp_parser\main.cpp
+	<iostream>
+	"parser.h"
+	"html_builder.h"
+	"windows_file_dialog.h"
+
+1544546432 e:\onyx programming task\bmp_parser\parser.h
+	"pixel.h"
+	"hash.h"
+	<unordered_set>
+	<stdio.h>
+
+1544541102 e:\onyx programming task\bmp_parser\windows_file_dialog.h
+
+1544550542 source:e:\onyx programming task\bmp_parser\pixel.cpp
+	"pixel.h"
+	"hash.h"
+	<iostream>
+	<vector>
+
+1544541102 source:e:\onyx programming task\bmp_parser\windows_file_dialog.cpp
 	"windows_file_dialog.h"
 	<windows.h>
 	<iostream>
 
-1544409226 e:\onyx programming task\bmp_parser\windows_file_dialog.h
-
-1544497572 e:\onyx programming task\bmp_parser\hash.h
+1544553306 source:e:\onyx programming task\bmp_parser\parser.cpp
+	"parser.h"
 	"pixel.h"
+	"html_builder.h"
+	"bmp_builder.h"
+	"hash.h"
+	<algorithm>
+	<iostream>
+	<unordered_set>
+	<Windows.h>
+
+1544551888 source:e:\onyx programming task\bmp_parser\bmp_builder.cpp
+	"bmp_builder.h"
+	<Windows.h>
+	<algorithm>
+	<memory>
+
+1544551920 e:\onyx programming task\bmp_parser\bmp_builder.h
+	<Windows.h>
+	<memory>
 

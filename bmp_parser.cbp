@@ -35,6 +35,9 @@
 		<Linker>
 			<Add library="C:/MinGW/lib/libcomdlg32.a" />
 		</Linker>
+		<Unit filename="bmp_builder.cpp" />
+		<Unit filename="bmp_builder.h" />
+		<Unit filename="hash.h" />
 		<Unit filename="html_builder.cpp" />
 		<Unit filename="html_builder.h" />
 		<Unit filename="main.cpp" />

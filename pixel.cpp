@@ -51,22 +51,3 @@ bool operator ==(const Pixel& p1, const Pixel& p2)
 
     return false;
 }
-
-bool operator <(const Pixel& p1, const Pixel& p2)
-{
-    if(((p1.getRed() < p2.getRed()) &&
-       (p1.getBlue() < p2.getBlue()) &&
-       (p1.getGreen() < p2.getGreen())) ||
-
-       ((p1.getRed() == p2.getRed()) && ((p1.getGreen() < p2.getGreen()) || (p1.getBlue() < p2.getBlue()))) ||
-       ((p1.getGreen() == p2.getGreen()) && ((p1.getRed() < p2.getRed()) || (p1.getBlue() < p2.getBlue()))) ||
-       ((p1.getBlue() == p2.getBlue()) && ((p1.getRed() < p2.getRed()) || (p1.getGreen() < p2.getGreen()))) ||
-
-       (((p1.getRed() == p2.getRed()) && (p1.getGreen() == p2.getGreen())) && (p1.getBlue() < p2.getBlue())) ||
-       (((p1.getRed() == p2.getRed()) && (p1.getBlue() == p2.getBlue())) && (p1.getGreen() < p2.getGreen())) ||
-       (((p1.getGreen() == p2.getGreen()) && (p1.getBlue() == p2.getBlue())) && (p1.getRed() < p2.getRed()))
-       )
-        return true;
-
-    return false;
-}

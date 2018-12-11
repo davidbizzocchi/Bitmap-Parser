@@ -3,27 +3,24 @@
 #include "html_builder.h"
 #include "windows_file_dialog.h"
 
-using namespace std;
-
 int main()
 {
     Parser p;
     char* filePointer = (char *)malloc(261);
 
-    cout << "Select a file to parse" << endl;
+    std::cout << "Select a file to parse" << std::endl;
 
     windows_file_dialog::selectBMP(filePointer);
 
-    cout << "Parsing image..." << endl;
+    std::cout << "Parsing image..." << std::endl;
 
     p.parseimage(filePointer);
 
-    cout << "Writing to HTML file..." << endl;
+    std::cout << "Writing to HTML file..." << std::endl;
 
-    //html_builder::create(p.getPixelVector());
     html_builder::create(p.getPixelSet());
 
-    //p.clearPixelVector();
+    delete[] filePointer;
 
     return 0;
 }
